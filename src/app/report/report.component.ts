@@ -19,7 +19,8 @@ export class ReportComponent implements OnInit {
       bindto: '#chart',
       data: {
         columns: [],
-        type: 'bar'
+        type: 'bar',
+        onclick: (d, element) => console.log(d) // dummy click handler
       },
       bar: {
         width: {
